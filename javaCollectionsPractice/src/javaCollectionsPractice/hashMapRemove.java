@@ -14,7 +14,7 @@ public class hashMapRemove {
         hashMapCatTypes.put(9, "American Wirehair Cat Breed");
         System.out.println(hashMapCatTypes);
         System.out.println("Removig Abyssinian Cat");
-        hashMapCatTypes.remove(1, "Abyssinian Cat");
+        hashMapCatTypes.remove(1);
         System.out.println(hashMapCatTypes);
     }
 }
