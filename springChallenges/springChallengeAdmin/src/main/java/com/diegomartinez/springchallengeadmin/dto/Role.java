@@ -1,4 +1,4 @@
-package com.diegomartinez.helloworld.dto;
+package com.diegomartinez.springchallengeadmin.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,9 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class ResponseDTO<T> {
-	private String message;
-	private T content;
-	
-	
+public class Role {
+	private String auth;
+
 }

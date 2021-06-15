@@ -20,8 +20,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	// https://mvnrepository.com/artifact/org.projectlombok/lombok
 	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
-	annotationProcessor 'org.projectlombok:lombok:1.18.20'    
-	
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'  
 }
 
 test {

@@ -1,4 +1,4 @@
-package com.diegomartinez.helloworld.dto;
+package com.diegomartinez.springchallenge.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class ResponseDTO<T> {
+public class ResponseDatesDTO<T> {
 	private String message;
 	private T content;
-	
-	
 }

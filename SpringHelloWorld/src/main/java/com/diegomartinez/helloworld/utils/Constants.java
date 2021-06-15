@@ -1,9 +1,12 @@
 package com.diegomartinez.helloworld.utils;
 
 public class Constants {
-	public enum ResponseConstant{
-		FAILURE(description 'Executed unsuccess'), 
-		SUCCESS('Executed success');
+	public static String HELLO = "Hello";
+	public static String BLANK_SPACE = " ";
+	public static String AGE = "age:";
+	public enum ResponseConstant {
+		FAILURE("Executed unsuccess"), 
+		SUCCESS("Executed success");
 		
 		private String description;
 		
