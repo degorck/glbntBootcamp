@@ -4,6 +4,7 @@ import com.diegomartinez.listfilter.dto.FilterDTO;
 import com.diegomartinez.listfilter.dto.ResponseDTO;
 import com.diegomartinez.listfilter.dto.StudentDTO;
 import com.diegomartinez.listfilter.service.ListFilterService;
+import com.diegomartinez.listfilter.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,7 @@ public class ListFilterController {
     @PostMapping(value = "list/filter")
     public ResponseEntity<ResponseDTO<String>> numbersCalc (@RequestBody FilterDTO filter){
         try {
-            ResponseDTO<FilterDTO> responseDTO = new ResponseDTO("Ok", listFilterService.getList(filter));
+            ResponseDTO<FilterDTO> responseDTO = new ResponseDTO(Constants.ResponseConstant.SUCCESS.getDescription(), listFilterService.getList(filter));
             return new ResponseEntity(responseDTO, HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity("Not accepted", HttpStatus.NOT_ACCEPTABLE);
