@@ -1,17 +1,17 @@
 package com.diegomartinez.listfilter.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Builder
 
 public class StudentDTO {
-    private String id;
+    private long id;
     private String name;
     private String age;
+    private String lastName;
+    private String email;
+    private String type;
 }
