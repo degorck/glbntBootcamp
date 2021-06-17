@@ -2,6 +2,7 @@ package com.diegomartinez.listfilter.utils;
 
 public class Constants {
     public static String COMMA = ",";
+    public static String DELETED = "was Deleted";
     public static String AVG = "average: ";
     public static String MAX = "max: ";
     public static String MIN = "min: ";
