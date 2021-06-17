@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -21,4 +22,7 @@ public class Type {
 
     @Column(name="name")
     private String name;
+
+    @OneToMany(mappedBy = "type", cascade = CascadeType.ALL)
+    private List<Student> student;
 }

@@ -1,5 +1,6 @@
 package com.diegomartinez.listfilter.dto;
 
+import com.diegomartinez.listfilter.entity.Type;
 import lombok.*;
 
 
@@ -13,5 +14,5 @@ public class StudentDTO {
     private String age;
     private String lastName;
     private String email;
-    private String type;
+    private long type;
 }

@@ -33,6 +33,7 @@ public class Student {
     @Column(name="email")
     private String email;
 
-    @Column(name="type_id")
-    private String type;
+    @ManyToOne
+    @JoinColumn(name = "type_id")
+    private Type type;
 }
