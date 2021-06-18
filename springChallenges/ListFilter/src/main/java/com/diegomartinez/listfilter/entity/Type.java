@@ -16,12 +16,12 @@ import java.util.List;
 @Table(name = "types")
 public class Type {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="id")
     private long id;
 
     @Column(name="name")
-    private String name;
+    private String typeName;
 
     @OneToMany(mappedBy = "type", cascade = CascadeType.ALL)
     private List<Student> student;
