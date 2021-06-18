@@ -27,4 +27,10 @@ public class StudentController {
         return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }
 
+    @DeleteMapping
+    public ResponseEntity<ResponseDTO<StudentDTO>> deleteStudent(@RequestParam long id){
+        ResponseDTO<StudentDTO> responseDTO = new ResponseDTO(Constants.ResponseConstant.SUCCESS.getDescription(), studentService.deleteStudent(id));
+        return new ResponseEntity<>(responseDTO, HttpStatus.OK);
+    }
+
 }
